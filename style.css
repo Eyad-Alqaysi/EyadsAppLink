@@ -4,7 +4,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  margin-top:32.5%;
   background: rgb(43, 41, 41);
 }
 
@@ -14,6 +14,8 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
+  height: 800px;
+  width: 400px;
 }
 
 #centeredmenu ul {
@@ -98,14 +100,13 @@ ul li:nth-child(5):hover span {
 }
 
 @media only screen and (max-width: 480px) {
-  #centeredmenu {
+  #centeredmenu ul {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  
-  ul li {
-    margin: auto;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
     padding: 0;
-    transform: none;
+    justify-content: center;
   }
 }
